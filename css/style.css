@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 아래부터 공통클래스 */
+.position-absolute {
+    position: absolute;
+}
+.position-relative {
+    position: relative;
+}
+
+.d-block {
+    display: block;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+
+/* overflow-hidden : 좌우 슬라이드에서, 넘치는 것 안보이게 해줘 */
+.overflow-hidden {
+    overflow: hidden;
+}
+.mx-auto {
+    margin: 0 auto;
+}
+
+/* 아래부터는 스타일링 */
+
+#gnb > li > a {
+    font-size: 22px;
+}
+
+#gnb > li:nth-child(4) > a {
+    color: red;
+}
+
+#gnb ul {
+    height: 0;
+    border: 1px solid black;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+/* #gnb:hover ul {
+    display: block;
+} -> ghb에 손을 올리면 ul이 다 나타남 */
+
+/* #gnb li:hover ul{
+    display: block;
+} -> gnb에서 특정 li에 손을 올리면 ul이 나타남 */
+
+#gnb li:hover ul {
+    height: 100px;
+}
